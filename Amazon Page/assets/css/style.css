@@ -3,14 +3,23 @@
   --black: #222f3f;
   --nav: #364759;
   --orange: #f56600;
-  --link: #166379;
+  --link: #306e78;
   --banner: #306e63;
   --white: white;
 }
-main {
-  margin: 1rem;
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+.w100 {
+  width: 100%;
+}
+.tc {
+  text-align: center;
+}
+.white {
+  color: var(--white);
+}
 header {
   background-color: #222f3f;
 }
@@ -25,19 +34,95 @@ header img {
 }
 nav ul li {
   display: inline;
-  color: var(--white);
   padding: 0.5rem;
 }
-.banner {
-  background-color: #166379;
+
+main {
+  padding: 1rem;
+  background-color: #e9edee;
+}
+
+.orange {
+  background-color: var(--orange);
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.holiday {
+  background-color: var(--banner);
+  background-image: url("../images/bg-image.png");
+  background-size: 93% 65%;
+  height: 100%;
+  line-height: 30px;
+  padding: 50px 0 30px;
+  margin-bottom: 20px;
+}
+
+.holiday h1 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .gift {
-  background-color: #306e63;
+  background-color: var(--white);
+}
+.gift h2 {
+  padding: 1rem;
+  text-align: start;
+  font-weight: 600;
+}
+span {
+  color: var(--link);
 }
 
-.full-banner {
-  background-color: aqua;
+.full-banner .fb1 {
+  margin-top: 40px;
+}
+.full-banner .fb1 img,
+.full-banner .fb2 img {
+  width: 100%;
+}
+
+.full-banner h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.full-banner span {
+  margin-left: 15px;
+  font-weight: 800;
+}
+.gift .card {
+  width: 22%;
+  zoom: 1; 
+  height: 350px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 15px;
+  margin-top: 0;
+  box-shadow: 2px 10px 15px 0px lightgrey;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gift .card.c4 {
+  background-image: url("../images/img_4.jpg");
+  margin-right: 0;
+}
+.c3 {
+  background-image: url("../images/img_3.jpg");
+}
+.c2 {
+  background-image: url("../images/img_2.jpg");
+}
+.gift .card.c1 {
+  background-image: url("../images/img_1.jpg");
+  
+}
+
+a {
+  color: var(--white);
 }
 
 footer {
@@ -45,19 +130,14 @@ footer {
   text-align: center;
 }
 
-a {
-  color: var(--white);
-  text-decoration: none;
-}
-
 footer a {
   background-color: var(--nav);
-  width: 100%;
+
   display: block;
   padding: 0.5rem;
 }
 
 footer img {
-    width: 150px;
-    padding: 3rem;
+  width: 150px;
+  padding: 3rem;
 }
